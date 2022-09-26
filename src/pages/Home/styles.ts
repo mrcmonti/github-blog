@@ -21,6 +21,8 @@ export const SearchInput = styled.input`
   padding: 0.75rem 1rem;
   background-color: ${(props) => props.theme["blue-dark-900"]};
 
+  color: ${(props) => props.theme["light-blue-300"]};
+
   &::placeholder {
     color: ${(props) => props.theme["blue-dark-400"]};
   }
@@ -49,9 +51,10 @@ export const Card = styled.div`
 
   header {
     display: flex;
-    strong {
+    a {
       flex: 1;
       color: ${(props) => props.theme["light-blue-100"]};
+      text-decoration: none;
     }
     span {
       color: ${(props) => props.theme["light-blue-300"]};
